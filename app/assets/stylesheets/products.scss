@@ -9,12 +9,12 @@
 
   table tr td {
     padding: 5px;
-    vertical-align: top;
+    vertical-align: center;
   }
 
   .list_image {
-    width: 60px;
-    height: 70px;
+    width: 130px;
+    height: 140px;
   }
 
   .list_description {
@@ -43,9 +43,9 @@
 }
 
 .list_line_even {
-  background: #e0f8f8;
+  background: #feffda;
 }
 
 .list_line_odd {
-  background: #f8b0f8;
+  background: #feffda;
 }
