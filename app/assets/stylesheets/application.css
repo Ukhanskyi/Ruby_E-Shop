@@ -48,7 +48,7 @@ img.banner {
 
 #columns {
     background: #007066;
-    display: flex;
+    display: flex
 }
 
 #main {
@@ -56,22 +56,40 @@ img.banner {
     background: #feffda;
     flex: 3;
 }
+
 #side {
     padding: 1em 3em;
     background: #007066;
-}
 
-ul {
-    padding: 0;
-}
+    form, div {
+        display: inline;
+    }
 
-li {
-    list-style: none;
-}
+    input {
+        font-size: small;
+    }
 
-a {
-    color: #feffda;
-    font-size: small;
+    #cart {
+        font-size: smaller;
+        color: #ffffff;
+
+        table {
+            border-top: 1px dotted #595;
+            border-bottom: 1px dotted #595;
+            margin-bottom: 10px;
+        }
+    }
+
+    ul {
+        padding: 0;
+        li {
+            list-style: none;
+            a {
+                color: #feffda;
+                font-size: small;
+            }
+        }
+    }
 }
 
 @media all and (max-width: 800px) {
