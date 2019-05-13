@@ -1,5 +1,5 @@
 body {
-  background-color: #fff;
+  background-color: #feffda;
   color: #333;
   margin: 33px;
   font-family: verdana, arial, helvetica, sans-serif;
@@ -14,7 +14,7 @@ p, ol, ul, td {
 }
 
 pre {
-  background-color: #eee;
+  background-color: #feffda;
   padding: 10px;
   font-size: 11px;
 }
@@ -27,7 +27,7 @@ a {
   }
 
   &:hover {
-    color: #fff;
+    color: #feffda;
     background-color: #000;
   }
 }
@@ -51,14 +51,15 @@ div {
 }
 
 .field_with_errors {
-  padding: 2px;
-  background-color: red;
+  padding: 1px;
+  color: red;
+  font-size: medium;
   display: table;
 }
 
 #error_explanation {
   width: 450px;
-  border: 2px solid red;
+  border: 1px solid red;
   padding: 7px 7px 0;
   margin-bottom: 20px;
   background-color: #f0f0f0;

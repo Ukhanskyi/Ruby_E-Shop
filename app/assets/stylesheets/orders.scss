@@ -1,0 +1,37 @@
+// Place all the styles related to the Orders controller here.
+// They will automatically be included in application.scss.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.depot_form {
+  fieldset {
+    background: #efe;
+    legend {
+      color: #feffda;
+      background: #007066;
+      font-family: sans-serif;
+      padding: 0.2em 1em;
+    }
+    div {
+      margin-bottom: 0.3em;
+    }
+  }
+  form {
+    label {
+      width: 5em;
+      float: left;
+      text-align: left;
+      padding-top: 0.5em;
+      margin-right: 0.1em;
+      display: block;
+    }
+    select, textarea, input {
+      margin-left: 0.5em;
+    }
+    .submit {
+      margin-left: 4em;
+    }
+    br {
+      display: none
+    }
+  }
+}
