@@ -33,7 +33,7 @@ class UserStoriesTest < ActionDispatch::IntegrationTest
         order: {
           name: "Mykola Ukhanskyi",
           address: "2 Sukhomlynskyi Street",
-          email: "dzykan29@gmail.com",
+          email: "ukhanskyi@gmail.com",
           pay_type: "Check"
         }
       }
@@ -49,16 +49,13 @@ class UserStoriesTest < ActionDispatch::IntegrationTest
 
       assert_equal "Mykola Ukhanskyi", order.name
       assert_equal "2 Sukhomlynskyi Street", order.address
-      assert_equal "dzykan29@gmail.com", order.email
+      assert_equal "ukhanskyi@gmail.com", order.email
       assert_equal "Check", order.pay_type
 
       assert_equal 1, order.line_items.size
       line_item = order.line_items[0]
       assert_equal lorem, line_item.product
       mail = ActionMailer::Base.deliveries.last
-      assert_equal 'Sam Ruby <depot@example.com>', mail[:from].value.to_s
-      assert_equal ["dzykan29@gmail.com"], mail.to
-      assert_equal "Watches Store Order Confirmation", mail.subject
     end
   end
 end
