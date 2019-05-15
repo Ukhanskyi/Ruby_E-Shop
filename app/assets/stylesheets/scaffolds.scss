@@ -1,9 +1,9 @@
 body {
-  background-color: #feffda;
-  color: #000;
+  background-color: #fff;
+  color: #333;
   margin: 33px;
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 18px;
 }
 
@@ -14,22 +14,21 @@ p, ol, ul, td {
 }
 
 pre {
-  background-color: #feffda;
+  background-color: #eee;
   padding: 10px;
   font-size: 11px;
 }
 
 a {
   color: #000;
-  font-size: 13px;
 
   &:visited {
-    color: #2E2F30;
+    color: #666;
   }
 
   &:hover {
-    color: #feffda;
-    background-color: #107076;
+    color: #fff;
+    background-color: #000;
   }
 }
 
@@ -52,15 +51,14 @@ div {
 }
 
 .field_with_errors {
-  padding: 1px;
-  color: red;
-  font-size: medium;
+  padding: 2px;
+  background-color: red;
   display: table;
 }
 
 #error_explanation {
   width: 450px;
-  border: 1px solid red;
+  border: 2px solid red;
   padding: 7px 7px 0;
   margin-bottom: 20px;
   background-color: #f0f0f0;
@@ -69,14 +67,14 @@ div {
     text-align: left;
     font-weight: bold;
     padding: 5px 5px 5px 15px;
-    font-size: 15px;
+    font-size: 12px;
     margin: -7px -7px 0;
     background-color: #c00;
     color: #fff;
   }
 
   ul li {
-    font-size: 14px;
+    font-size: 12px;
     list-style: square;
   }
 }
