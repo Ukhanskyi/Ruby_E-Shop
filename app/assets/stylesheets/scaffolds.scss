@@ -1,9 +1,9 @@
 body {
   background-color: #feffda;
-  color: #333;
+  color: #000;
   margin: 33px;
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 18px;
 }
 
@@ -21,14 +21,15 @@ pre {
 
 a {
   color: #000;
+  font-size: 13px;
 
   &:visited {
-    color: #666;
+    color: #2E2F30;
   }
 
   &:hover {
     color: #feffda;
-    background-color: #000;
+    background-color: #107076;
   }
 }
 
@@ -68,14 +69,14 @@ div {
     text-align: left;
     font-weight: bold;
     padding: 5px 5px 5px 15px;
-    font-size: 12px;
+    font-size: 15px;
     margin: -7px -7px 0;
     background-color: #c00;
     color: #fff;
   }
 
   ul li {
-    font-size: 12px;
+    font-size: 14px;
     list-style: square;
   }
 }
