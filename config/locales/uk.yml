@@ -1,0 +1,65 @@
+uk:
+
+  layouts:
+    application:
+      title:     "Ваш каталог годинників"
+      home:      "Домівка"
+      questions: "Запитання"
+      news:      "Новини"
+      contact:   "Зв'яжіться з нами"
+
+  store:
+    index:
+      title_html: "Ваш каталог годинників"
+      add_html:   "Добавити в корзину"
+
+  carts:
+    cart:
+      title:    "Ваша корзина"
+      empty:    "Очистити корзину"
+      checkout: "Оформити замовлення"
+
+  number:
+    currency:
+      format:
+        unit:      "$"
+        precision: 2
+        separator: "."
+        delimiter: ","
+        format:    "%u%n"
+
+  orders:
+    new:
+      legend: "Будь ласка введіть ваші дані"
+    form:
+      name:            "Ім'я"
+      address_html:    "Адреса "
+      email:           "E-mail "
+      pay_type:        "Оплата: "
+      pay_prompt_html: "Оберіть тип оплати"
+      submit:          "Зробити замовлення"
+
+  activerecord:
+    models:
+      order:      "замовлення"
+
+    attributes:
+      order:
+        address:  "Адреса"
+        name:     "Ім'я"
+        email:    "E-mail "
+        pay_type: "Оплата: "
+
+    errors:
+      messages:
+        inclusion: " не вибрано з списку! "
+        blank:     " не може бути порожнім! "
+
+  errors:
+    template:
+      body:        "Є проблеми з наступними полями:"
+      header:
+        one:       "1 помилка забороняє збереження цього %{model}"
+        other:     "%{count} помилки забороняють збереження цього %{model}"
+
+  thanks: "Дякуємо за замовлення"

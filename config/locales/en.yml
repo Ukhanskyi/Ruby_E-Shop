@@ -29,7 +29,6 @@ en:
 
   orders:
     new:
-      title: "New fuck"
       legend: "Please Enter Your Details"
     form:
       name:            "Name"
@@ -38,6 +37,17 @@ en:
       pay_type:        "Pay with"
       pay_prompt_html: "Select a payment method"
       submit:          "Place Order"
+
+  activerecord:
+    models:
+      order:        "order"
+  errors:
+    template:
+      body:         "There were problems with the following fields:"
+      header:
+        one:        "1 error prohibited this %{model} from being saved"
+        other:      "%{count} errors prohibited this %{model} from being saved"
+
 
   thanks: "Thank you for your order"
 
