@@ -2,6 +2,7 @@
 
 class OrdersController < ApplicationController
   skip_before_action :authorize, only: %i[new create]
+  protect_from_forgery with: :null_session
 
   include CurrentCart
 
@@ -71,7 +72,8 @@ class OrdersController < ApplicationController
   def destroy
     @order.destroy
     respond_to do |format|
-      format.html { redirect_to orders_url, notice: 'Order was successfully destroyed.' }
+      format.html { redirect_to orders_url,
+        notice: 'Order was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

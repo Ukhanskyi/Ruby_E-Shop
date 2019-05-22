@@ -1,3 +1,3 @@
-Order#shipped
-
-<%= @greeting %>, find me in app/views/order_mailer/shipped.text.erb
+Watches Order Shipped
+This is just to let you know that we've shipped your recent order:
+<%= render @order.line_items -%>
