@@ -20,11 +20,4 @@ test:
   password: password
   host: 127.0.0.1
 
-production:
-  adapter: mysql2
-  encoding: utf8
-  database: e_shop
-  username: username
-  password: password
-  host: 127.0.0.1
 
