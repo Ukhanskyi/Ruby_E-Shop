@@ -20,4 +20,13 @@ test:
   password: password
   host: 127.0.0.1
 
+production:
+  adapter: mysql2
+  encoding: unicode
+  database: e_shop
+  username: username
+  password: password
+  host: localhost
+  pool: 5
+  timeout: 5000
 
