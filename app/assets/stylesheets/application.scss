@@ -22,7 +22,7 @@ body, body > p, body > ol, body > ul, body > td {margin: 8px !important}
     padding: 10px;
     border-bottom: 1px solid;
     font: small-caps 40px/40px "Times New Roman", serif;
-    color: white;
+    color: #feffda;
     text-align: center;
 }
 
@@ -59,7 +59,8 @@ img.banner {
 
 #side {
     padding: 1em 3em;
-    background: #007066;
+    background: #8fbc8e;
+    border: solid 1px #224444;
 
     form, div {
         display: inline;
@@ -69,11 +70,11 @@ img.banner {
     }
 
     #cart {
-        font-size: 13px;
-        color: white;
+        font-size: 15px;
+        color: #feffda;
         table {
-            border-top: 1px dotted #007066;
-            border-bottom: 1px dotted #007066;
+            border-top: 1px dotted #adf0fa;
+            border-bottom: 1px dotted #adf0fa;
             margin-bottom: 10px;
         }
     }
@@ -83,7 +84,7 @@ img.banner {
         li {
             list-style: none;
             a {
-                color: #fff;
+                color: #224444;
                 font-size: 15px;
             }
         }
@@ -104,8 +105,61 @@ img.banner {
         display: none;
     }
 }
+.links{
+  background-color: #adf0fa;
+  vertical-align: center;
+  text-align: center;
+  border: solid 1px #adf0fa;
+  border-radius: 7px;
+  margin: 5px;
+  float: left;
+  font-size: 15px;
+  color: #adf0fa;
+  height: 25px;
+  width: 150px;
+}
+
+.f_label{
+  font-size: 17px;
+  color: #224444;
+}
+
+.fine_field {
+  background-color: #ade4ca;
+  border: solid 1px #007066;
+  font-size: 15px;
+  color: #224444;
+  height: 30px;
+}
+
+.select_from{
+  height: 25px;
+  font-size: 14px;
+  color: #224444;
+}
+
+.fine_field_desc {
+  background-color: #ade4ca;
+  border-color: #007066;
+}
 
 .locale {
+  background-color: #adf0fa;
+  border: solid 1px #007066;
   float: right;
   margin: -0.25em 0.1em;
+  font-size: 15px;
+  color: #224444;
+  height: 30px;
+}
+
+.button{
+  background-color: #3b945e;
+  border: none;
+  color: #224444;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  height: 30px;
 }

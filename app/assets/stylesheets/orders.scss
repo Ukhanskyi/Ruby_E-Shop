@@ -4,7 +4,7 @@
 
 .depot_form {
   fieldset {
-    background: #efe;
+    background: #feffda;
     legend {
       color: #feffda;
       background: #007066;
@@ -17,6 +17,8 @@
   }
   form {
     label {
+      font-size: 17px;
+      color: #224444;
       width: 5em;
       float: left;
       text-align: left;
@@ -25,7 +27,13 @@
       display: block;
     }
     select, textarea, input {
+      background-color: #8fbc8e;
+      border: solid 1px #007066;
+      margin-top: 5px;
       margin-left: 0.5em;
+      font-size: 15px;
+      color: #224444;
+      height: 30px;
     }
     .submit {
       margin-left: 4em;

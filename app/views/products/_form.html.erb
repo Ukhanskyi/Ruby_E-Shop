@@ -12,26 +12,26 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.label :title, class: 'f_label' %>
+    <%= form.text_field :title, class: 'fine_field' %>
   </div>
 
   <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description, rows: 10, cols: 60 %>
+    <%= form.label :description, class: 'f_label' %>
+    <%= form.text_area :description, rows: 10, cols: 60, class: 'fine_field_desc' %>
   </div>
 
   <div class="field">
-    <%= form.label :image_url %>
-    <%= form.text_field :image_url %>
+    <%= form.label :image_url, class: 'f_label' %>
+    <%= form.text_field :image_url, class: 'fine_field' %>
   </div>
 
   <div class="field">
-    <%= form.label :price %>
-    <%= form.text_field :price %>
+    <%= form.label :price, class: 'f_label' %>
+    <%= form.text_field :price, class: 'fine_field' %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div>
+    <%= form.submit class: 'button' %>
   </div>
 <% end %>

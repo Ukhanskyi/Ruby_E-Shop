@@ -13,22 +13,22 @@
     </div>
   <% end %>
   <div class="field">
-    <%= f.label :name, t('.name') %>
-    <%= f.text_field :name, size: 40 %>
+    <%= f.label :name, t('.name'), class: 'f_label' %>
+    <%= f.text_field :name, size: 40, class: 'fine_field' %>
   </div>
   <div class="field">
-    <%= f.label :address, t('.address_html') %>
-    <%= f.text_area :address, rows: 3, cols: 40 %>
+    <%= f.label :address, t('.address_html'), class: 'f_label' %>
+    <%= f.text_area :address, rows: 3, cols: 40, class: 'fine_field' %>
   </div>
   <div class="field">
-    <%= f.label :email, t('.email') %>
-    <%= f.email_field :email, size: 40 %>
+    <%= f.label :email, t('.email'), class: 'f_label' %>
+    <%= f.email_field :email, size: 40, class: 'fine_field' %>
   </div>
   <div class="field">
-    <%= f.label :pay_type, t('.pay_type') %>
-    <%= f.select :pay_type, Order.pay_types.keys, prompt: t('.pay_prompt_html') %>
+    <%= f.label :pay_type, t('.pay_type'), class: 'f_label' %>
+    <%= f.select :pay_type, Order.pay_types.keys, prompt: t('.pay_prompt_html'), class: 'select_from' %>
   </div>
   <div class="actions">
-    <%= f.submit t('.submit') %>
+    <%= f.submit t('.submit'), class: 'button'  %>
   </div>
 <% end %>

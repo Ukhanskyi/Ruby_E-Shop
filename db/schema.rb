@@ -12,12 +12,12 @@
 
 ActiveRecord::Schema.define(version: 2019_05_15_093646) do
 
-  create_table "carts", force: :cascade do |t|
+  create_table "carts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "line_items", force: :cascade do |t|
+  create_table "line_items", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "product_id"
     t.integer "cart_id"
     t.datetime "created_at", null: false
@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 2019_05_15_093646) do
     t.index ["product_id"], name: "index_line_items_on_product_id"
   end
 
-  create_table "orders", force: :cascade do |t|
+  create_table "orders", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
     t.text "address"
     t.string "email"
@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 2019_05_15_093646) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "products", force: :cascade do |t|
+  create_table "products", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title"
     t.text "description"
     t.string "image_url"
@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 2019_05_15_093646) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
     t.string "password_digest"
     t.datetime "created_at", null: false
