@@ -26,7 +26,6 @@ production:
   database: e_shop
   username: username
   password: password
-  host: localhost
   pool: 5
   timeout: 5000
   url: <%= ENV['DATABASE_URL'] %>
